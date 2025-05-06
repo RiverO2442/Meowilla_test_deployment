@@ -1,23 +1,15 @@
 import {
   Box,
   Button,
-  Checkbox,
   Container,
   CssBaseline,
-  FormControlLabel,
   Link,
   TextField,
   Typography,
 } from "@mui/material";
-import { Avatar, message } from "antd";
-import { useNavigate } from "react-router-dom";
-import {
-  googleLogin,
-  loginUser,
-  registerUser,
-  saveSearch,
-} from "../../service/service";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { googleLogin, loginUser } from "../../service/service";
 
 function Copyright() {
   return (

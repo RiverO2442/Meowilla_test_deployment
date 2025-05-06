@@ -7,10 +7,9 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { message } from "antd";
-import { registerUser } from "../../service/service";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { registerUser } from "../../service/service";
 
 function Copyright() {
   return (

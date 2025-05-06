@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { AutoComplete, Button, Input, Select } from "antd";
-import { FilterOutlined, SearchOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import { fetchRecentSearches, saveSearch } from "../../service/service";
 

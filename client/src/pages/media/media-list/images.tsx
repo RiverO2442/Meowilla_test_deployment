@@ -1,8 +1,8 @@
-import "../styles.css";
 import { Pagination } from "antd";
-import { useNavigate } from "react-router-dom";
-import { audioSearch, imageSearch } from "../../../service/service";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { imageSearch } from "../../../service/service";
+import "../styles.css";
 
 type Pagination = {
   cunrrentPage: number;
