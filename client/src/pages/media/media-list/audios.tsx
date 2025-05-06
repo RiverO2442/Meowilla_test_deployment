@@ -58,7 +58,7 @@ export default function Audios({ headerParams }: any) {
                 alt={item.title}
                 loading="lazy"
                 onError={(e) => {
-                  e.currentTarget.src = "public/no-image.png";
+                  e.currentTarget.src = "/no-image.png";
                 }}
               />
               <div className="text-black">{item?.title}</div>
