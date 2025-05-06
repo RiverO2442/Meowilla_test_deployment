@@ -147,12 +147,19 @@ export default function Header({ onSearchChange }: any) {
                 </div>
                 <div className={`${verifyLogin && "hidden"}`}>
                   <a
-                    href="/login"
                     title=""
                     className={`"items-center justify-center px-4 py-3 text-base font-semibold transition-all duration-200 bg-blue-500 border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700 hover:text-blue-900 focus:text-blue-900"`}
                     role="button"
                   >
-                    <p className="text-white">Login</p>
+                    <p
+                      className="text-white"
+                      onClick={() => {
+                        localStorage.removeItem("token");
+                        navigate("/login");
+                      }}
+                    >
+                      Login
+                    </p>
                   </a>
                 </div>
                 <div className={`${!verifyLogin && "hidden"}`}>
