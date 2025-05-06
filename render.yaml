@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: backend
+    env: docker
+    plan: free
+    region: oregon
+    dockerContext: ./server
+    dockerfilePath: Dockerfile
+    startCommand: python main.py
+    envVars:
+      - key: JWT_SECRET_KEY
+        value: default_secret_key
+      - key: GOOGLE_CLIENT_ID
+        value: your-google-client-id.apps.googleusercontent.com
+      - key: GOOGLE_CLIENT_SECRET
+        value: your-google-client-secret
+      - key: OPENVERSE_CLIENT_ID
+        value: frPMBxB91SHgwmYO4oHbftFzzNnOWkYTFYqtuf1B
+      - key: OPENVERSE_CLIENT_SECRET
+        value: FMSyuFAUK364a42j46f68lMpcFmfiFvbgkjUuF0I0xPMmzu8NAbRx8vrr1XhMSqm1xHfQw2KJx4GPAjAnIRGkojYvfK0uGaj85lZOBujjlHrhkohMvUUacs94P55MgU1
+      - key: FLASK_ENV
+        value: production
