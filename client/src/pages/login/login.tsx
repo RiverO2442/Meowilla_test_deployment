@@ -37,9 +37,9 @@ export default function Login() {
     }
   };
 
-  const handleGoogleLogin = () => {
-    googleLogin();
-  };
+  // const handleGoogleLogin = () => {
+  //   googleLogin();
+  // };
 
   return (
     <Container component="main" maxWidth="xs">

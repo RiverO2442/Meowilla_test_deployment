@@ -68,7 +68,7 @@ export default function Header({ onSearchChange }: any) {
                 <Input
                   size="large"
                   placeholder="Search media by name"
-                  prefix={<SearchOutlined />}
+                  // prefix={<SearchOutlined />}
                   allowClear
                   onChange={(e: any) => {
                     setSearch(e?.target?.value);

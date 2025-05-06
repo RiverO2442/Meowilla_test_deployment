@@ -7,7 +7,7 @@ import Footer from "./pages/footer/footer";
 import ImageDetail from "./pages/media/media-detail/image-detail";
 import SignIn from "./pages/login/login";
 import Register from "./pages/register/register";
-import Images from "./pages/media/media-list/images";
+// import Images from "./pages/media/media-list/images";
 import Media from "./pages/media/media";
 import AudioDetail from "./pages/media/media-detail/audio-detail";
 
